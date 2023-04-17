@@ -1,0 +1,93 @@
+for setting username run git config --global user.name "kiran"
+for setting email run git config --global user.email "imkiran13@gmail.com"
+run command rm -rf .git to remove repository
+
+Initialize repository:-
+1.initialize git repository using git init
+
+check for changes untracked changes:-
+2.check for git status  for untracked files
+
+Add all changed files for staging
+3.git add . for all files and git add filename ofr single file
+
+check all  staged files
+4.git status to check tracked files now after adding
+
+commit all files from staging area
+4.staged all files now git commit -m "messase" for commiting files
+
+check for respository if its clean
+5.check git status for clean directory
+
+check commit details
+6.for commit details run git log command and run git log -p and git log -p -2 shows last 2 commit details 
+ to check which commit is done 
+
+find present working directory
+7.for finding current working directory run pwd command(present working directory)
+
+To see available files and folder in repository
+8. for checking available file and folder run ls command (list show)
+
+difference between working repository and staging area and staging area and last commit
+9.for checking difference between staging area and working direct run git diff command and to check difference between 
+staging area and last commit run git diff --staged command
+
+Remove the file using command 
+10.for removing file run git rm filename command it will automatically delete and stage the files
+
+Renaming the file
+11. for renaming file run git mv filename.txt newfilename.txt it will rename the file.
+
+Removing the files from tracking
+12.for removing files from tracking run git rm --cached filename it will not tracl the file after adding in gitignore
+
+
+skiiping staging area direct commit
+13.git commit -a -m "commit message"
+
+Restoring/Unstage the files
+14.unstage the file run git restore --staged filename.txt
+
+To unmodify files or discard working directory files( when we modify files shows with red)
+15. run git checkout -- filename.txt
+git checkout -f go get previous commit changes discarding current one
+
+to create remote repository
+16.git remote add origin https://github.com/imkiran13/git-practice.git
+git push -u origin master
+git push origin branchname
+
+git alias (short form)
+17.git config --global alias.st status
+
+view all branches 
+18. git branch
+
+create new branch
+19.git checkout -b newbranchname
+
+switching other branch
+20.git checkout branchname
+
+merge one branch to another
+21.git merge branchname
+
+git branch commit details
+22.git branch -v
+
+check merged branches
+23.git branch --merged
+
+check unmerged branches
+24.git branch --no-merged
+
+delete branch after using
+25.git branch -d branchname
+
+26.check remote 
+git remote
+git remote -v
+
+
